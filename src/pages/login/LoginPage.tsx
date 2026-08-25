@@ -38,34 +38,34 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen w-full flex-col overflow-hidden bg-zinc-950 font-sans text-zinc-100 selection:bg-indigo-500 selection:text-white lg:flex-row">
       {/* ================= LEFT COLUMN: HERO & FLOATING STATS ================= */}
-      <div className="relative flex w-full flex-col justify-between overflow-hidden border-b border-zinc-800/60 bg-linear-to-br from-zinc-950 via-zinc-900 to-indigo-950/40 p-8 md:p-12 lg:w-1/2 lg:border-r lg:border-b-0 lg:p-16">
+      <div className="relative flex w-full flex-col justify-between overflow-hidden border-b border-zinc-800/60 bg-linear-to-br from-zinc-950 via-zinc-900 to-indigo-950/40 p-4 sm:p-8 md:p-12 lg:w-1/2 lg:border-r lg:border-b-0 lg:p-16">
         {/* Ambient Glowing Orbs */}
         <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-indigo-500/10 blur-3xl" />
         <div className="pointer-events-none absolute -right-32 -bottom-32 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl" />
         <div className="pointer-events-none absolute top-1/2 left-1/3 h-80 w-80 -translate-y-1/2 rounded-full bg-blue-500/5 blur-3xl" />
 
         {/* Top Header / Branding */}
-        <div className="relative z-10 flex items-center justify-between">
-          <Link to="/" className="group flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-tr from-zinc-100 to-zinc-300 text-zinc-900 shadow-md transition-transform group-hover:scale-105">
-              <Package className="h-5 w-5" />
+        <div className="relative z-10 flex flex-wrap items-center justify-between gap-3">
+          <Link to="/" className="group flex shrink-0 items-center gap-2.5 sm:gap-3">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-linear-to-tr from-zinc-100 to-zinc-300 text-zinc-900 shadow-md transition-transform group-hover:scale-105 sm:h-10 sm:w-10">
+              <Package className="h-4.5 w-4.5 sm:h-5 sm:w-5" />
             </div>
-            <span className="text-lg font-bold tracking-tight text-white">
-              {t("nav.brandName", "Admin")}
+            <span className="text-base font-bold tracking-tight text-white sm:text-lg">
+              {t("nav.brandName", "Dok")}
               <span className="text-indigo-400">
-                {t("nav.brandHighlight", "Dash")}
+                {t("nav.brandHighlight", "kany")}
               </span>
             </span>
           </Link>
 
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400 backdrop-blur-md">
+          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-2.5 py-1 text-[10px] font-semibold text-emerald-400 backdrop-blur-md sm:px-3 sm:text-xs">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
             {t("login.systemOperational", "System Operational")}
           </span>
         </div>
 
         {/* Hero Content Section */}
-        <div className="relative z-10 my-12 space-y-8 lg:my-0">
+        <div className="relative z-10 my-12 hidden space-y-8 md:inline-block lg:my-0">
           <div className="inline-flex items-center gap-2 rounded-full border border-indigo-500/20 bg-indigo-500/10 px-3.5 py-1.5 text-xs font-medium text-indigo-300 backdrop-blur-md">
             <ShieldCheck className="h-3.5 w-3.5 text-indigo-400" />
             {t("login.badge", "Enterprise Access Management")}

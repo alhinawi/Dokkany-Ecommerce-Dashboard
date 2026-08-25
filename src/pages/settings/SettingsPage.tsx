@@ -269,7 +269,7 @@ export default function SettingsPage({
   ] as const;
 
   return (
-    <main className="container mx-auto flex-1 p-4 pt-6 md:p-8">
+    <main className="mx-auto max-w-7xl flex-1 p-4 pt-6 md:p-8">
       {/* Page Header */}
       <div className="mb-8 flex flex-col justify-between gap-4 border-b border-gray-200 pb-5 md:flex-row md:items-center dark:border-zinc-800">
         <div>

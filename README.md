@@ -1,4 +1,4 @@
-# AdminDash — Enterprise E-Commerce Admin & Analytics Dashboard
+# Dokkany — Enterprise E-Commerce Admin & Analytics Dashboard
 
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -28,7 +28,7 @@ An enterprise-grade, high-performance e-commerce admin control panel and catalog
 
 ## 🌟 Overview
 
-**AdminDash** is designed as a production-ready SaaS administration dashboard for modern e-commerce enterprises. Rather than a basic CRUD demo, it delivers a comprehensive management workflow featuring:
+**Dokkany** is designed as a production-ready SaaS administration dashboard for modern e-commerce enterprises. Rather than a basic CRUD demo, it delivers a comprehensive management workflow featuring:
 
 - **Enterprise Product Management**: Full catalog tracking across 64 realistic items with SKUs, stock thresholds, ratings, and color variants.
 - **Interactive Analytics Engine**: Real-time KPI tracking, category relative market valuation graphs, inventory share calculations, and pricing tier distribution deep dives.
@@ -124,7 +124,7 @@ When **Demo Mode** is toggled **ON**:
 
 ## 📱 Smart Responsive Pagination System
 
-To maintain seamless touch interaction across all viewport sizes, **AdminDash** implements a custom responsive pagination algorithm:
+To maintain seamless touch interaction across all viewport sizes, **Dokkany** implements a custom responsive pagination algorithm:
 
 ### Viewport Behavior
 

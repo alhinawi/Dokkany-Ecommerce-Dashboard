@@ -69,7 +69,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/90 backdrop-blur-md transition-colors duration-300 dark:border-zinc-800 dark:bg-zinc-900/90">
-      <div className="container mx-auto flex items-center justify-between px-3 py-2.5 sm:py-3 md:px-4 lg:px-5">
+      <div className="mx-auto max-w-7xl flex items-center justify-between px-3 py-2.5 sm:py-3 md:px-4 lg:px-6">
         {/* 1. Logo & Mobile Toggle */}
         <div className="flex items-center gap-x-2 sm:gap-x-3">
          
@@ -80,10 +80,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
             </div>
             <div>
               <span className="text-base font-bold tracking-tight text-zinc-900 sm:text-lg dark:text-white">
-                {t("nav.brandName", "Admin")}
-                <span className={`ms-0.5 ${themePreset.text}`}>
-                  {t("nav.brandHighlight", "Dash")}
-                </span>
+                {t("nav.brandName", "Dok")}<span className={themePreset.text}>{t("nav.brandHighlight", "kany")}</span>
               </span>
               <span className="ms-2 hidden rounded-full border border-zinc-200 bg-zinc-100 px-2 py-0.5 text-[10px] font-semibold text-zinc-600 lg:inline-block dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400">
                 {t("common.version", "v2.4")}

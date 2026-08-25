@@ -18,7 +18,7 @@ export default function DocsPage() {
             {t("footer.documentation", "Documentation")}
           </h1>
           <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-            Learn how to manage, configure, and scale your Admin Dashboard experience.
+            Learn how to manage, configure, and scale your Dokkany experience.
           </p>
         </div>
 

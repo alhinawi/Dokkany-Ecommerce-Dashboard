@@ -123,7 +123,7 @@ export default function ProfileMenu({
         </div>
 
         {/* User Info (Visible on Desktop >= 1280px) */}
-        <div className="hidden flex-col text-left xl:flex">
+        <div className="hidden flex-col text-left md:flex">
           <span className="truncate text-xs font-semibold text-zinc-900 dark:text-zinc-100">
             {user.name}
           </span>

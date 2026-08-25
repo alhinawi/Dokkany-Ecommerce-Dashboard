@@ -2,7 +2,13 @@ import { useEffect, useRef, useState } from "react";
 
 import type { ChangeEvent, SubmitEvent } from "react";
 import { useTranslation } from "react-i18next";
-import { BrowserRouter, Route, Routes, useLocation, useSearchParams } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  useLocation,
+  useSearchParams,
+} from "react-router-dom";
 import { v4 as uuid } from "uuid";
 
 import AIChatPanel from "./components/ai/AIChatPanel";
@@ -275,7 +281,7 @@ function ProductsView({
   };
 
   return (
-    <main className="container mx-auto max-w-full min-w-0 flex-1 p-3.5 pt-6 sm:p-5 sm:pt-8">
+    <main className="mx-auto max-w-7xl min-w-0 flex-1 p-3.5 pt-6 sm:p-5 sm:pt-8">
       <Hero onAddProduct={open} />
 
       <div id="analytics-section" className="scroll-mt-24">

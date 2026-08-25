@@ -18,7 +18,7 @@ export default function ApiPage() {
             {t("footer.apiReference", "API Reference")}
           </h1>
           <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-            Integrate your business applications with the Admin Dashboard API endpoints.
+            Integrate your business applications with the Dokkany API endpoints.
           </p>
         </div>
 

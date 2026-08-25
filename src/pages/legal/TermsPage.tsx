@@ -30,7 +30,7 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing and using this Admin Dashboard workspace, you agree to comply with and be bound by these Terms of Service. If you do not agree, please discontinue use immediately.
+              By accessing and using this Dokkany workspace, you agree to comply with and be bound by these Terms of Service. If you do not agree, please discontinue use immediately.
             </p>
           </section>
 

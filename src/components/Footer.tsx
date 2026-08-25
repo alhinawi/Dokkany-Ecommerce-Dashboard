@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="mt-20 border-t border-gray-200/80 bg-slate-900 text-slate-400">
-      <div className="container mx-auto px-5 py-12">
+      <div className="mx-auto max-w-7xl px-5 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand Col */}
           <div className="md:col-span-1">
@@ -27,10 +27,7 @@ const Footer = () => {
                 </svg>
               </div>
               <span className="text-lg font-bold tracking-tight text-white">
-                {t("nav.brandName", "Admin")}
-                <span className="text-accent">
-                  {t("nav.brandHighlight", "Dash")}
-                </span>
+                {t("nav.brandName", "Dok")}<span className="text-accent">{t("nav.brandHighlight", "kany")}</span>
               </span>
             </div>
             <p className="text-xs leading-relaxed text-slate-400">
