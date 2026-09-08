@@ -364,11 +364,11 @@ const AnalyticsCharts = ({ products }: AnalyticsChartsProps) => {
   return (
     <div className="mb-10 rounded-2xl border border-gray-100 bg-white p-6 shadow-xs transition-all dark:border-slate-800 dark:bg-slate-900">
       {/* Header & Controls */}
-      <div className="flex flex-col justify-between gap-y-4 border-b border-gray-100 pb-6 sm:flex-row sm:items-center dark:border-slate-800">
+      <div className="flex flex-col justify-between gap-4 border-b border-gray-100 pb-6 xl:flex-row xl:items-center dark:border-slate-800">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span className="h-2.5 w-2.5 shrink-0 animate-pulse rounded-full bg-indigo-600 dark:bg-indigo-400" />
-            <h3 className="text-lg font-bold [overflow-wrap:anywhere] break-words text-gray-900 dark:text-white">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white">
               {t(
                 "analytics.realTimeCatalog",
                 "Catalog Analytics & Visual Graphs",
@@ -380,7 +380,7 @@ const AnalyticsCharts = ({ products }: AnalyticsChartsProps) => {
               </span>
             )}
           </div>
-          <p className="mt-0.5 text-xs leading-relaxed [overflow-wrap:anywhere] break-words text-gray-500 dark:text-slate-400">
+          <p className="mt-1 text-xs leading-relaxed text-gray-500 dark:text-slate-400">
             {t(
               "analytics.analyticsDescription",
               "Interactive SVG charts, inventory market share, and price curves",
@@ -415,7 +415,7 @@ const AnalyticsCharts = ({ products }: AnalyticsChartsProps) => {
             <button
               type="button"
               onClick={() => setActiveTab("overview")}
-              className={`min-w-0 cursor-pointer rounded-lg px-2.5 py-1.5 text-center break-words whitespace-normal transition-all ${
+              className={`min-w-0 cursor-pointer rounded-lg px-2.5 py-1.5 text-center transition-all ${
                 activeTab === "overview"
                   ? "text-accent bg-white font-semibold shadow-xs dark:bg-slate-700"
                   : "text-gray-600 hover:text-gray-900 dark:text-slate-400 dark:hover:text-white"
@@ -426,7 +426,7 @@ const AnalyticsCharts = ({ products }: AnalyticsChartsProps) => {
             <button
               type="button"
               onClick={() => setActiveTab("categories")}
-              className={`min-w-0 cursor-pointer rounded-lg px-2.5 py-1.5 text-center break-words whitespace-normal transition-all ${
+              className={`min-w-0 cursor-pointer rounded-lg px-2.5 py-1.5 text-center transition-all ${
                 activeTab === "categories"
                   ? "text-accent bg-white font-semibold shadow-xs dark:bg-slate-700"
                   : "text-gray-600 hover:text-gray-900 dark:text-slate-400 dark:hover:text-white"
@@ -438,7 +438,7 @@ const AnalyticsCharts = ({ products }: AnalyticsChartsProps) => {
             <button
               type="button"
               onClick={() => setActiveTab("pricing")}
-              className={`min-w-0 cursor-pointer rounded-lg px-2.5 py-1.5 text-center break-words whitespace-normal transition-all ${
+              className={`min-w-0 cursor-pointer rounded-lg px-2.5 py-1.5 text-center transition-all ${
                 activeTab === "pricing"
                   ? "text-accent bg-white font-semibold shadow-xs dark:bg-slate-700"
                   : "text-gray-600 hover:text-gray-900 dark:text-slate-400 dark:hover:text-white"

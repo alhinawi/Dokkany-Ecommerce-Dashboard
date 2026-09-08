@@ -281,7 +281,7 @@ function ProductsView({
   };
 
   return (
-    <main className="mx-auto max-w-7xl min-w-0 flex-1 p-3.5 pt-6 sm:p-5 sm:pt-8">
+    <main className="container mx-auto max-w-7xl min-w-0 flex-1 p-3.5 pt-6 sm:p-5 sm:pt-8">
       <Hero onAddProduct={open} />
 
       <div id="analytics-section" className="scroll-mt-24">

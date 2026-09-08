@@ -17,7 +17,7 @@ const Hero = ({ onAddProduct }: Props) => {
   const heroSlides = [
     {
       id: 1,
-      badge: t("hero.slide1.badge", "🚀 Product Dashboard 2.0"),
+      badge: t("hero.slide1.badge", " Product Dashboard 2.0"),
       headingTitle: t("hero.slide1.headingTitle", "Build & Manage Your"),
       headingHighlight: t("hero.slide1.headingHighlight", "Premium Collection"),
       subtitle: t(
