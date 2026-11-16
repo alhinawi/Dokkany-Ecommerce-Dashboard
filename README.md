@@ -1,12 +1,23 @@
+<div align="center">
+
 # Dokkany — Enterprise E-Commerce Admin & Analytics Dashboard
 
+### A production-grade control panel for modern e-commerce
+
+[![Live demo](https://img.shields.io/badge/live-dokkany.vercel.app-7c3aed?style=for-the-badge)](https://dokkany.vercel.app)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-An enterprise-grade, high-performance e-commerce admin control panel and catalog management platform. Inspired by the refined design aesthetics of **Stripe**, **Linear**, and **Apple**, **AdminDash** provides real-time inventory insights, interactive category valuation analytics, dynamic demo mode simulations, advanced multi-criteria product filtering, and a smart responsive pagination system.
+[![Dokkany dashboard](public/screenshots/hero.webp)](https://dokkany.vercel.app)
+
+**[Open the live demo →](https://dokkany.vercel.app)**
+
+</div>
+
+An enterprise-grade, high-performance e-commerce admin control panel and catalog management platform. Inspired by the refined design aesthetics of **Stripe**, **Linear**, and **Apple**, **Dokkany** provides real-time inventory insights, interactive category valuation analytics, dynamic demo mode simulations, advanced multi-criteria product filtering, and a smart responsive pagination system.
 
 ---
 
@@ -167,7 +178,7 @@ Page 13 of 16:  ← Prev   1 ... 11 12 [13] 14 15 16   Next →
 ## 🗂️ Project Folder Structure
 
 ```txt
-AdminDash/
+Dokkany-Ecommerce-Dashboard/
 ├── src/
 │   ├── assets/             # Local images, SVG illustrations, and static assets
 │   ├── components/         # Reusable dashboard components
@@ -211,8 +222,8 @@ Ensure you have **Node.js** (v18.0.0 or higher) installed on your machine.
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/alhinawi/e-commerce.git
-   cd AdminDash
+   git clone https://github.com/alhinawi/Dokkany-Ecommerce-Dashboard.git
+   cd Dokkany-Ecommerce-Dashboard
    ```
 
 2. **Install dependencies**:
@@ -275,4 +286,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <div align="center">
   <sub>Built with ❤️ using React, TypeScript, and Tailwind CSS.</sub>
+
+Made with care by **Mohamed Alhinawi** · [dokkany.vercel.app](https://dokkany.vercel.app)
+
 </div>
