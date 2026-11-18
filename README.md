@@ -1,23 +1,23 @@
 <div align="center">
 
-# Dokkany — Enterprise E-Commerce Admin & Analytics Dashboard
+# Dokkany | E-Commerce Admin & Analytics Dashboard
 
-### A production-grade control panel for modern e-commerce
+### A multilingual e-commerce dashboard demo
 
 [![Live demo](https://img.shields.io/badge/live-dokkany.vercel.app-7c3aed?style=for-the-badge)](https://dokkany.vercel.app)
-[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-[![Dokkany dashboard](public/screenshots/hero.webp)](https://dokkany.vercel.app)
+[![Dokkany dashboard](docs/media/desktop.webp)](https://dokkany.vercel.app)
 
 **[Open the live demo →](https://dokkany.vercel.app)**
 
 </div>
 
-An enterprise-grade, high-performance e-commerce admin control panel and catalog management platform. Inspired by the refined design aesthetics of **Stripe**, **Linear**, and **Apple**, **Dokkany** provides real-time inventory insights, interactive category valuation analytics, dynamic demo mode simulations, advanced multi-criteria product filtering, and a smart responsive pagination system.
+Dokkany is a React and TypeScript dashboard demo for product catalogs, valuation charts and user management. It includes sample data, client-side controls, light/dark themes and multilingual UI. It is not a connected merchant back office: backend persistence and production access control remain integration work.
 
 ---
 
@@ -39,7 +39,7 @@ An enterprise-grade, high-performance e-commerce admin control panel and catalog
 
 ## 🌟 Overview
 
-**Dokkany** is designed as a production-ready SaaS administration dashboard for modern e-commerce enterprises. Rather than a basic CRUD demo, it delivers a comprehensive management workflow featuring:
+**Dokkany** demonstrates an e-commerce administration workflow with sample catalog and account data:
 
 - **Enterprise Product Management**: Full catalog tracking across 64 realistic items with SKUs, stock thresholds, ratings, and color variants.
 - **Interactive Analytics Engine**: Real-time KPI tracking, category relative market valuation graphs, inventory share calculations, and pricing tier distribution deep dives.
@@ -50,7 +50,7 @@ An enterprise-grade, high-performance e-commerce admin control panel and catalog
 
 ## ✨ Key Features
 
-- **🔒 Split-Column Authentication Page**: Premium dark-mode login experience with animated statistics cards, password visibility toggles, and social login integrations.
+- **🔒 Split-Column Authentication Page**: Premium dark-mode login experience with animated statistics cards, password visibility toggles, and social sign-in UI. Production authentication is not established by this demo.
 - **📦 Enterprise Product Catalog**: 64 pre-configured items with complete metadata (SKU, price, stock, ratings, reviews, color swatches).
 - **🔎 Multi-Field Search**: Real-time filtering across titles, descriptions, and SKUs with instant query highlight reset.
 - **🏷️ Category & Stock Status Filtering**: Filter by 7 standardized categories or stock state (`In Stock`, `Low Stock`, `Out of Stock`).
@@ -165,7 +165,7 @@ Page 13 of 16:  ← Prev   1 ... 11 12 [13] 14 15 16   Next →
 
 ## 🧰 Tech Stack
 
-- **Core**: [React 19](https://react.dev/), [TypeScript 5.8](https://www.typescriptlang.org/), [Vite 6](https://vitejs.dev/)
+- **Core**: [React 19.2](https://react.dev/), [TypeScript 6.0](https://www.typescriptlang.org/), [Vite 8](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (using native CSS variables `utility-(--custom-property)`), Vanilla CSS
 - **Component Primitives**: [Headless UI](https://headlessui.com/), [shadcn/ui](https://ui.shadcn.com/)
 - **Data Tables**: [TanStack Table v8](https://tanstack.com/table/v8)
@@ -215,7 +215,7 @@ Dokkany-Ecommerce-Dashboard/
 
 ### Prerequisites
 
-Ensure you have **Node.js** (v18.0.0 or higher) installed on your machine.
+Use **Node.js 22.12+** for the current Vite 8 toolchain. The repository records pnpm as its package manager.
 
 ### Installation
 
@@ -256,13 +256,21 @@ npm run preview
 
 ## 📸 Screenshots & UI Showcase
 
-| View                             | Screenshot Preview                                               |
-| :------------------------------- | :--------------------------------------------------------------- |
-| **Authentication Page**          | ![Login Page](public/screenshots/login-page.png)                 |
-| **Dashboard Overview**           | ![Dashboard Overview](public/screenshots/dashboard-overview.png) |
-| **Analytics & Valuation Charts** | ![Analytics Charts](public/screenshots/analytics-charts.png)     |
-| **Product Catalog Grid**         | ![Products Grid](public/screenshots/products-grid.png)           |
-| **Mobile Smart Pagination**      | ![Mobile Pagination](public/screenshots/mobile-pagination.png)   |
+Current live-site captures from November 18, 2026. The charts and directory show sample data, not merchant transactions or verified customer accounts.
+
+![Dokkany navigation tour](docs/media/demo.gif)
+
+The short GIF is a navigation-capture tour of the live dashboard, analytics and user-management views, not a continuous screen recording.
+
+| Dashboard | Analytics |
+| --- | --- |
+| ![Desktop product dashboard](docs/media/desktop.webp) | ![Catalog valuation charts](docs/media/analytics.webp) |
+
+| User management | Mobile dashboard |
+| --- | --- |
+| ![Sample account directory](docs/media/users.webp) | ![Dashboard at 390px](docs/media/mobile.webp) |
+
+**Demo navigation:** open [the dashboard](https://dokkany.vercel.app/) and use its header to reach Users Management. A direct request to `/users` returned a hosting 404 during capture, while in-app navigation worked. The user-directory mobile view also showed horizontal overflow; the mobile image above is the working dashboard layout. These captures do not imply those route/layout issues have been fixed.
 
 ---
 
@@ -273,8 +281,8 @@ npm run preview
 - [ ] **Role-Based Access Control (RBAC)**: Fine-grained permissions for Admin, Manager, and Viewer roles.
 - [ ] **Real-time Notifications**: WebSockets-driven live activity stream for inventory changes.
 - [ ] **CSV / PDF Export**: One-click catalog export and inventory audit reports.
-- [ ] **Light Theme Toggle**: Seamless light/dark theme switching mode.
-- [ ] **Internationalization (i18n)**: Multi-language support (English, Arabic, Spanish).
+- [x] **Light Theme Toggle**: Switch between light and dark themes.
+- [x] **Internationalization (i18n)**: Locale files for English, Arabic, German, Spanish and French.
 
 ---
 
