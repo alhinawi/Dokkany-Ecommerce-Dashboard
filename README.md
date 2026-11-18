@@ -167,10 +167,10 @@ Page 13 of 16:  ← Prev   1 ... 11 12 [13] 14 15 16   Next →
 
 - **Core**: [React 19.2](https://react.dev/), [TypeScript 6.0](https://www.typescriptlang.org/), [Vite 8](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (using native CSS variables `utility-(--custom-property)`), Vanilla CSS
-- **Component Primitives**: [Headless UI](https://headlessui.com/), [shadcn/ui](https://ui.shadcn.com/)
+- **Component Primitives**: [Headless UI](https://headlessui.com/) and Radix Popover
 - **Data Tables**: [TanStack Table v8](https://tanstack.com/table/v8)
 - **Icons & Visuals**: [Lucide React](https://lucide.dev/), [Heroicons](https://heroicons.com/)
-- **Form Validation**: [Zod](https://zod.dev/), [React Hook Form](https://react-hook-form.com/)
+- **Charts & Localization**: Recharts, i18next and react-i18next
 - **Utilities**: `uuid`, `clsx`, `tailwind-merge`
 
 ---
@@ -215,7 +215,7 @@ Dokkany-Ecommerce-Dashboard/
 
 ### Prerequisites
 
-Use **Node.js 22.12+** for the current Vite 8 toolchain. The repository records pnpm as its package manager.
+Use a current **Node.js 22 LTS** release for the Vite 8 toolchain. The repository records pnpm as its package manager.
 
 ### Installation
 
