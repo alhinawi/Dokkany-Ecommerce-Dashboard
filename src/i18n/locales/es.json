@@ -231,7 +231,7 @@
       "enterpriseRatio": "Soporte dedicado prioritario"
     },
     "table": {
-      "searchPlaceholder": "Buscar usuarios por nombre, correo o país... (⌘K)",
+      "searchPlaceholder": "Buscar usuarios por nombre o país... (⌘K)",
       "allRoles": "Todos los roles",
       "allPlans": "Todos los planes",
       "allStatuses": "Todos los estados",

@@ -231,7 +231,7 @@
       "enterpriseRatio": "Dedizierter Prioritäts-Support"
     },
     "table": {
-      "searchPlaceholder": "Benutzer nach Name, E-Mail oder Land suchen... (⌘K)",
+      "searchPlaceholder": "Benutzer nach Name oder Land suchen... (⌘K)",
       "allRoles": "Alle Rollen",
       "allPlans": "Alle Pläne",
       "allStatuses": "Alle Status",

@@ -13,6 +13,7 @@ import {
 import { useTranslation } from "react-i18next";
 
 import type { User } from "../../types/user";
+import { maskEmail } from "../../utils/maskEmail";
 
 interface UserDetailDrawerProps {
   user: User | null;
@@ -153,7 +154,7 @@ export default function UserDetailDrawer({
               <div className="flex items-center gap-3 text-xs text-zinc-600 dark:text-zinc-300">
                 <Mail className="h-4 w-4 text-zinc-400" />
                 <span className="font-mono text-zinc-900 dark:text-zinc-100">
-                  {user.email}
+                  {maskEmail(user.email)}
                 </span>
               </div>
               <div className="flex items-center gap-3 text-xs text-zinc-600 dark:text-zinc-300">
