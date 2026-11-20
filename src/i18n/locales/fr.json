@@ -231,7 +231,7 @@
       "enterpriseRatio": "Support dédié et prioritaire"
     },
     "table": {
-      "searchPlaceholder": "Rechercher par nom, email ou pays... (⌘K)",
+      "searchPlaceholder": "Rechercher par nom ou pays... (⌘K)",
       "allRoles": "Tous les rôles",
       "allPlans": "Tous les forfaits",
       "allStatuses": "Tous les statuts",

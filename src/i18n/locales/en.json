@@ -231,7 +231,7 @@
       "enterpriseRatio": "Dedicated tier support"
     },
     "table": {
-      "searchPlaceholder": "Search users by name, email, or country... (⌘K)",
+      "searchPlaceholder": "Search users by name or country... (⌘K)",
       "allRoles": "All Roles",
       "allPlans": "All Plans",
       "allStatuses": "All Statuses",

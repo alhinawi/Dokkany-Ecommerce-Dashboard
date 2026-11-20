@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 
+import { maskEmail } from "../../utils/maskEmail";
+
 import {
   ArrowUpDown,
   ChevronDown,
@@ -171,7 +173,7 @@ export default function UsersTable({
                   {user.fullName}
                 </button>
                 <span className="block truncate font-mono text-xs text-zinc-500 dark:text-zinc-400">
-                  {user.email}
+                  {maskEmail(user.email)}
                 </span>
               </div>
             </div>
@@ -530,7 +532,7 @@ export default function UsersTable({
     const rows = targetUsers.map((u) => [
       u.id,
       `"${u.fullName}"`,
-      u.email,
+      maskEmail(u.email),
       u.role,
       u.plan,
       u.status,
@@ -562,7 +564,7 @@ export default function UsersTable({
             type="text"
             placeholder={t(
               "users.table.searchPlaceholder",
-              "Search users by name, email, or country... (⌘K)",
+              "Search users by name or country... (⌘K)",
             )}
             value={globalFilter}
             onChange={(e) => setGlobalFilter(e.target.value)}
