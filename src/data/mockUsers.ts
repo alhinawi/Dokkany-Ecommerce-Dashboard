@@ -254,13 +254,13 @@ export const mockUsers: User[] = combinedUsersList.map(
 
     const email = `${cleanFn}.${cleanLn}@${chosenDomain}`;
 
-    // Use gender-specific avatars.
+    // Use gender-specific avatars served from the in-repo generated set.
     const imageIndex =
       userItem.gender === "women"
         ? femaleAvatarIndex++ % 50
         : maleAvatarIndex++ % 50;
 
-    const avatar = `https://randomuser.me/api/portraits/${userItem.gender}/${imageIndex}.jpg`;
+    const avatar = `/avatars/${userItem.gender}/${imageIndex}.jpg`;
 
     const month = (index % 12) + 1;
     const day = (index % 28) + 1;
